@@ -14,7 +14,7 @@ LOG_FILE="fedavg_transformer_tc.log"
 # WORKER_NUM=10
 CI=0
 
-DATA_DIR=/data/cdq/fednlp_data/
+DATA_DIR=/data0/jliu/Datasets/fednlp_data/
 DATA_NAME=$DATA
 PROCESS_NUM=`expr $WORKER_NUM + 1`
 echo $PROCESS_NUM

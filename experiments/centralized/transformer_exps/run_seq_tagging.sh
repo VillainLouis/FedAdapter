@@ -4,8 +4,8 @@ LAYERS=$2
 DATA_NAME=onto
 CUDA_VISIBLE_DEVICES=$GPU_NUM python -m main_st \
     --dataset ${DATA_NAME} \
-    --data_file /data/cdq/fednlp_data/data_files/${DATA_NAME}_data.h5 \
-    --partition_file  /data/cdq/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
+    --data_file /data0/jliu/Datasets/fednlp_data/data_files/${DATA_NAME}_data.h5 \
+    --partition_file  /data0/jliu/Datasets/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
     --partition_method niid_label_clients=30_alpha=0.1 \
     --model_type distilbert \
     --model_name distilbert-base-uncased  \

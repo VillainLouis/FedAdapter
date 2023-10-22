@@ -6,8 +6,8 @@ echo $GPU_NUM
 DATA_NAME=semeval_2010_task8
 CUDA_VISIBLE_DEVICES=$GPU_NUM python -m main_tc \
     --dataset ${DATA_NAME} \
-    --data_file /data/cdq/fednlp_data/data_files/${DATA_NAME}_data.h5 \
-    --partition_file /data/cdq/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
+    --data_file /data0/jliu/Datasets/fednlp_data/data_files/${DATA_NAME}_data.h5 \
+    --partition_file /data0/jliu/Datasets/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
     --partition_method niid_label_clients=100_alpha=100 \
     --model_type distilbert \
     --model_name distilbert-base-uncased  \

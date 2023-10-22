@@ -15,7 +15,7 @@ LOG_FILE="fedavg_transformer_tc.log"
 # WORKER_NUM=10
 CI=0
 
-DATA_DIR=/data/cdq/fednlp_data/
+DATA_DIR=/data0/jliu/Datasets/fednlp_data/
 DATA_NAME=$DATA
 PROCESS_NUM=`expr $WORKER_NUM + 1`
 echo $PROCESS_NUM
@@ -35,7 +35,7 @@ python -m fedavg_main_tc_trial \
   --partition_method $PARTITION_METHOD \
   --fl_algorithm $FL_ALG \
   --model_type bert \
-  --model_name bert-base-uncased \
+  --model_name /data0/jliu/Models/LLM/bert-base-uncased \
   --do_lower_case True \
   --train_batch_size 4 \
   --eval_batch_size 8 \

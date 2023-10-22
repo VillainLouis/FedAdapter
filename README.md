@@ -28,7 +28,7 @@ conda install mpi4py=3.0.3=py37hf046da1_1
 conda install six==1.15.0
 
 
-cd FedML; git submodule init; git submodule update; cd ../;
+cd FedML && git submodule init && git submodule update && cd ../
 
 ```
 

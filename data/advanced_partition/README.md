@@ -61,7 +61,7 @@ For text_classification data we use their natural label to form the paritition s
 ### Usage
 
 ```bash
-DATA_DIR=/data/cdq/fednlp_data/
+DATA_DIR=/data0/jliu/Datasets/fednlp_data/
 
 python -m data.advanced_partition.niid_label \
 --client_number 100 \

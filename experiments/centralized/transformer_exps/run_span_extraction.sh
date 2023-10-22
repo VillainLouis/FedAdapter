@@ -1,8 +1,8 @@
 DATA_NAME=mrqa
 CUDA_VISIBLE_DEVICES=4,5,6,7 python -m main_se \
     --dataset ${DATA_NAME} \
-    --data_file /data/cdq/fednlp_data/data_files/${DATA_NAME}_data.h5 \
-    --partition_file /data/cdq/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
+    --data_file /data0/jliu/Datasets/fednlp_data/data_files/${DATA_NAME}_data.h5 \
+    --partition_file /data0/jliu/Datasets/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
     --partition_method uniform_clients=6 \
     --model_type distilbert \
     --model_name distilbert-base-uncased  \

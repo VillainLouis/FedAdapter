@@ -10,7 +10,7 @@ LOG_FILE="fedavg_transformer_ss.log"
 WORKER_NUM=3
 CI=0
 
-DATA_DIR=/data/cdq/fednlp_data/
+DATA_DIR=/data0/jliu/Datasets/fednlp_data/
 DATA_NAME=wmt_de-en
 PROCESS_NUM=`expr $WORKER_NUM + 1`
 echo $PROCESS_NUM

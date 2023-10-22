@@ -163,6 +163,9 @@ freeze_layers = [[depth],[round],depth,[width]]
 # Trial&Error Log
 # os.system("rm results\/{args.dataset}-depth-{args.depth}-freq-{args.time_threshold}.log".format(args=args))
 filename = "results/{args.dataset}-depth-{args.depth}-freq-{args.time_threshold}.log".format(args=args)
+result_dir = "results"
+if not os.path.exists(result_dir):
+    os.makedirs(result_dir)
 f=open(filename,"w+")
 print("Running args is %s" % str(args),file=f,flush=True)
 

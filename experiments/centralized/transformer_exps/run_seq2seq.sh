@@ -3,8 +3,8 @@
 DATA_NAME=wmt_de-en
 CUDA_VISIBLE_DEVICES=4 python -m main_ss \
     --dataset ${DATA_NAME} \
-    --data_file /data/cdq/fednlp_data/data_files/${DATA_NAME}_data.h5 \
-    --partition_file /data/cdq/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
+    --data_file /data0/jliu/Datasets/fednlp_data/data_files/${DATA_NAME}_data.h5 \
+    --partition_file /data0/jliu/Datasets/fednlp_data/partition_files/${DATA_NAME}_partition.h5 \
     --partition_method uniform \
     --model_type bart \
     --model_name facebook/bart-base  \
